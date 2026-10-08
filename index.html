@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en" data-theme="ligh">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -144,8 +144,8 @@
     }
 
     .about-img img {
-      width: 300px;
-      height: 300px;
+      width: 420px;
+      height: 4200px;
       border-radius: 20px;
       object-fit: contain;
     }
@@ -333,7 +333,7 @@
     document.addEventListener("DOMContentLoaded", () => {
       const html = document.documentElement;
       const toggleButton = document.getElementById('theme-toggle');
-      const currentTheme = html.getAttribute('data-theme') || 'dark';
+      const currentTheme = html.getAttribute('data-theme') || 'light';
       html.setAttribute('data-theme', currentTheme);
       toggleButton.textContent = currentTheme === 'dark' ? '☀️' : '🌙';
     });
